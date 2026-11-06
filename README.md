@@ -1,17 +1,22 @@
 # Web Analytics
 
-A privacy-conscious website analytics console for page views, traffic sources, device mix, top pages and conversion journeys.
+A privacy-conscious website analytics console: a tracking snippet, page-view events in, and a daily dashboard of visitors, sources, pages and conversions. The collect endpoint is CORS-enabled; the snippet stores only a random session id.
 
-An ACRYL Blends blueprint for the **Analytics** category (`acrylblends.web-analytics`, category 07 of 100).
-
-Status: designed, being built. `design/spec.md` is the specification and `design/mockup.html` the mockup (open it in a browser). The app itself,
-composed from Cordis plugins (one `plugins/<feature>/` folder and one `blend.yaml` row per feature), lands here when it passes review.
-
-When it is ready you will start it with:
+## Run it
 
 ```sh
-npm create acrylblends@latest my-app -- --from acrylblends.web-analytics
-cd my-app && npm install && npm run dev
+npm install
+npm start
 ```
 
-Listed on https://acrylblends.github.io/blends and https://acryl.dev/blends.
+Open the address it prints. `npm test` runs the tests (node:test; no network, no key).
+
+## What to ask the chat next
+
+- Open the tracking page and paste the snippet into a page on another site.
+- Add a conversion for a demo request and check the funnel.
+- Open the events page and filter it to sign-ups.
+
+## Screenshot
+
+![Web Analytics](docs/screenshot.png)
